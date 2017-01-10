@@ -1,0 +1,175 @@
+@import './base.less';
+@import './adapter.less';
+@import './mixin.less';
+body{
+    .box{
+        header{
+            position:fixed;	
+            width:20rem;						
+            height:75/32rem;	
+            font-size:15/32rem;	
+            background-color: rgba(248,248,248,0.9);
+            border-bottom:1/32rem solid #D53740;
+            z-index: 100;
+            span{
+                img{  
+                    padding-top: 5/32rem;                 
+                    padding-left: 30/32rem;             
+                    height: 60/32rem;
+                    width: 240/32rem;
+                    float: left;
+                }
+            }
+            ul{
+                margin:0; 	
+                padding:0;
+                margin-right: 20/32rem; 
+                margin-top: 0/32rem;      
+                list-style:none;
+                li{
+                    float:left;
+                    a{
+                    font-size:30/32rem;
+                    line-height:75/32rem;
+                    padding:0/32rem 15/32rem;
+                    font-weight: 800;
+                    color:#333333;
+                    &:hover{
+                        color:#D53740;
+                    }                     
+                    }
+                    span{
+                        font-size:24/32rem;
+                    } 
+                }
+            }
+        }
+        .login{
+            .black{
+                height: 150/32rem;
+            }
+            .login_cont{
+                width: 500/32rem;
+                 height: 600/32rem;
+                margin:0 auto;
+                .login_title{
+                    p{
+                        font-size:32/32rem;
+                        font-weight: 900;
+                        color:#D53740; 
+                        padding:40/32rem 0;
+                        margin: 0;                         
+                    }
+                }
+                ul{
+                    margin:0;
+                    padding:0;
+                    li{
+                         label{
+                line-height:78/32rem;
+                float:left; 
+                padding-right:20/32rem; 
+                font-size:32/32rem;
+                &.first{                     
+                padding-right:32/32rem;  
+                } 
+                }
+                    }
+                }
+                ul.in{
+                    margin:0;
+                    padding:0;
+                    li{
+                        padding:10/32rem 0;
+                        input{
+                display: block;
+                height: 55/32rem;
+                width: 360/32rem;
+                border: 1/32rem solid #C7C7C7;
+                margin-left:-24/32rem; 
+                &.check{
+                    width: 130/32rem;
+                    margin-right:20/32rem;
+                }
+                &[type="text"]{
+                    font-size:10/32rem;
+                    padding-left:5/32rem;   
+                    }
+                                         
+                    }
+                    img{
+                    height: 55/32rem;
+                }
+                    }
+                }
+                input{
+                        &[type="button"]{
+                        margin:40/32rem 5/32rem;
+                        font-size:20/32rem;
+                        font-weight:800;
+                        height: 60/32rem;
+                        border-radius: 8/32rem;                                                
+                    }  
+                }
+                a.red{
+                    margin-right:10/32rem;              
+                    background-color: #EF2C34; 
+                    &:active{
+                        margin-top:.25rem;
+                        padding-bottom:.25rem;
+                    }
+                }
+                &>div.a2{
+                    margin-right:4rem;
+                    a.gray{                            
+                    background-color: #999;
+                    &:active{
+                        margin-top:.25rem;
+                        padding-bottom:.25rem;
+                    }
+                }
+                }                
+                  .sel{
+                      margin-top:200/32rem;
+                      height: 64/32rem;
+                    select{  
+                        margin-left:0/32rem;
+                        float:left;                        
+                        margin-top:10/32rem;
+                        height: 45/32rem; 
+                        margin-right:1rem;                                                               
+                    }  
+                    a{
+                       font-size:12/32rem;
+                       line-height: 2rem;
+                    } 
+                  }             
+         
+            }
+        }
+        footer{
+            margin-top:70/32rem;
+            background-color: #F0F0F0;
+            font-size:10/32rem;
+            height: 210/32rem;
+            ul{
+                height: 30/32rem;
+                padding-top:12/32rem; 
+                padding-bottom:12/32rem; 
+                padding-left:12%;
+                border-bottom: 1/32rem solid #776E6E;              
+                li{
+                    float:left;
+                    padding-left:14/32rem;
+                    a{
+                        color:#000000;
+                    }                    
+                }
+            }
+            p{
+                margin:12/32rem 0;
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,82 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+img {
+  display: block;
+  border: 0 none;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+input {
+  border: 0 none;
+  outline-style: none;
+  margin: 0;
+  padding: 0;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.box {
+  display: block;
+  margin: 0;
+}
+.box-sizing {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body .box header {
+  height: 1.06666667rem;
+  background-color: #D53740;
+}
+body .box nav {
+  height: 4.33333333rem;
+  background-color: #F8F8F8;
+}
+body .box section .scroll {
+  height: 11.66666667rem;
+  background-color: greenyellow;
+}
+body .box section .counted {
+  height: 4rem;
+  background-color: orangered;
+}
+body .box section .foren {
+  margin-top: 0.66666667rem;
+  height: 6.66666667rem;
+  background-color: orangered;
+}
+body .box section .foren aside {
+  float: left;
+  display: block;
+  width: 10rem;
+  background-color: blueviolet;
+}
+body .box section .foren article {
+  width: 13.33333333rem;
+  background-color: green;
+}
+body .box section .financing {
+  height: 14.66666667rem;
+  margin-top: 1.16666667rem;
+  color: white;
+  background-color: black;
+}
+body .box section .bill {
+  height: 8rem;
+  margin-top: 1.16666667rem;
+  background-color: orangered;
+}
+body .box footer {
+  margin-top: 1.83333333rem;
+  height: 9.5rem;
+  background-color: #434448;
+}

@@ -1,0 +1,3 @@
+﻿span不认识padding-top？
+p对不齐，可以br
+input中value没有字，检查文件是不是放错位置了

@@ -1,0 +1,65 @@
+@import './base.less';
+@import './adapter.less';
+@import './mixin.less';
+
+body {
+	width: 30rem;
+	margin: 0 auto;
+    // 头部开始
+	header{
+		height:32/30rem;
+		background-color:#D53740;
+		font-size: 15/30rem;			
+		span{                     
+			color:#EEEEEE;
+            &.tel{
+                  margin:8/30rem 100/30rem;              
+            }			
+		}
+        ul{ 
+            margin-top:0px;                
+            li{
+                 float:left;       
+                .box-sizing;               
+                a{
+                    line-height:32/30rem;
+                    font-size:15/30rem;
+                    color:#FFFFFF;
+                    padding:10/30rem;                                                  
+                    &:hover{
+                     background-color: #ffffff;
+                     color:black
+                    }                    
+                }                   
+            }     
+        }
+    }
+    // 头部结束
+
+    // 导航开始
+    nav{
+		height:130/30rem;
+        font-size:18/30rem;
+        background-color:#F8F8F8;
+        span{
+            line-height:40/30rem;
+            margin-top:40/30rem;
+            margin-left:40/30rem;       
+        }  
+        ul{
+            margin:0;      ;
+            li{
+                float:left;
+                a{
+                    line-height:100/30rem;
+                    padding:0 22/30rem;
+                    color:#333333;
+                    &:hover{
+                        color:#D53740;
+                    }
+                }
+            }
+        }      
+	}
+    // 导航结束
+}	

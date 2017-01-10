@@ -1,0 +1,147 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #FFFFFF;
+}
+img {
+  display: block;
+  border: 0 none;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+input {
+  border: 0 none;
+  outline-style: none;
+  margin: 0;
+  padding: 0;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+/*mixin 混入*/
+/*REM适配 主流机型*/
+@media (min-width: 320px) {
+  html {
+    font-size: 12.8px;
+  }
+}
+@media (min-width: 360px) {
+  html {
+    font-size: 14.4px;
+  }
+}
+@media (min-width: 375px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media (min-width: 384px) {
+  html {
+    font-size: 15.36px;
+  }
+}
+@media (min-width: 400px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media (min-width: 414px) {
+  html {
+    font-size: 16.56px;
+  }
+}
+@media (min-width: 424px) {
+  html {
+    font-size: 16.96px;
+  }
+}
+@media (min-width: 480px) {
+  html {
+    font-size: 19.2px;
+  }
+}
+@media (min-width: 540px) {
+  html {
+    font-size: 21.6px;
+  }
+}
+@media (min-width: 720px) {
+  html {
+    font-size: 28.8px;
+  }
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 30.72px;
+  }
+}
+.box-sizing {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  width: 30rem;
+  margin: 0 auto;
+}
+body header {
+  height: 1.06666667rem;
+  background-color: #D53740;
+  font-size: 0.5rem;
+}
+body header span {
+  color: #EEEEEE;
+}
+body header span.tel {
+  margin: 0.26666667rem 3.33333333rem;
+}
+body header ul {
+  margin-top: 0px;
+}
+body header ul li {
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body header ul li a {
+  line-height: 1.06666667rem;
+  font-size: 0.5rem;
+  color: #FFFFFF;
+  padding: 0.33333333rem;
+}
+body header ul li a:hover {
+  background-color: #ffffff;
+  color: black;
+}
+body nav {
+  height: 4.33333333rem;
+  font-size: 0.6rem;
+  background-color: #F8F8F8;
+}
+body nav span {
+  line-height: 1.33333333rem;
+  margin-top: 1.33333333rem;
+  margin-left: 1.33333333rem;
+}
+body nav ul {
+  margin: 0;
+}
+body nav ul li {
+  float: left;
+}
+body nav ul li a {
+  line-height: 3.33333333rem;
+  padding: 0 0.73333333rem;
+  color: #333333;
+}
+body nav ul li a:hover {
+  color: #D53740;
+}

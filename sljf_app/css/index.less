@@ -1,0 +1,359 @@
+@import './base.less';
+@import './adapter.less';
+@import './mixin.less';
+
+body {
+    // 头部开始
+	.box{
+	     header{
+            position:fixed;	
+            width:20rem;						
+            height:75/32rem;	
+            font-size:15/32rem;	
+            background-color: rgba(248,248,248,0.9);
+            border-bottom:1/32rem solid #D53740;
+            z-index: 100;
+            span{
+                img{  
+                    padding-top: 5/32rem;                 
+                    padding-left: 30/32rem;             
+                    height: 60/32rem;
+                    width: 240/32rem;
+                    float: left;
+                }
+            }
+            ul{
+                margin:0; 	
+                padding:0;
+                margin-right: 20/32rem; 
+                margin-top: 0/32rem;      
+                list-style:none;
+                li{
+                    float:left;
+                    a{
+                    font-size:30/32rem;
+                    line-height:75/32rem;
+                    padding:0/32rem 15/32rem;
+                    font-weight: 800;
+                    color:#333333;
+                    &:hover{
+                        color:#D53740;
+                    }                     
+                    }
+                    span{
+                        font-size:25/32rem;
+                    } 
+                }
+            }
+        }
+    // 导航结束
+	section{
+		.bla{
+			height: 75/32rem;
+		}
+		// 轮播图
+		.scroll{
+			height:10rem;
+			width: 100%;			
+			position: relative;
+			overflow: hidden;	
+			&>ul:first-child{
+				margin:0;
+				padding:0;
+				width: 1000%;
+               -webkit-transform:translateX(-10%);/*尽可能做webkit内核的兼容*/
+               transform: translateX(-10%);
+			   li{
+				   width: 10%;
+				   float: left;
+				   a{
+					   width: 100%;
+					   display: block;
+					   img{
+						     width:100%;
+							/*
+							font-size 0
+							block
+							vertical-align: middle;
+							*/
+							display: block;
+					   }
+				   }
+			   }
+			}
+			&>ul:last-child{
+				width: 118/32rem;
+				height: 6/32rem;
+				position: absolute;
+				bottom: 1rem;
+				left: 45%;
+				margin-left:-59/32rem;
+				li{
+				    width: 10/32rem;
+					height: 10/32rem;
+					float: left;
+					border-radius: 3/32rem;
+					border: 1/32rem solid #fff;
+					margin-left: 10/32rem;
+					&.now{
+						 background: #fff;
+					}
+					&:nth-child(1){
+						 margin-left: 0;
+					}
+				}	
+			}
+		}
+		// 四个小图标
+	.counted{
+			height:220/32rem;	
+			margin-top:20/32rem;
+			margin-left:40/32rem;					
+			.icon1{
+				display:flex;										
+				img{	
+					flex:1;				
+					height:110/32rem;											
+					margin-right:40/32rem;
+				}				
+			}
+			.icon2{	
+				margin-right:30/32rem;
+				margin-left:-15/32rem;
+				display: flex;
+				font-size:20/32rem;		
+                  	dl{	
+						   flex:1;
+						   text-align: center;						  
+						  dt{
+							 font-size:26/32rem;
+						  }
+					}						 								
+				}							
+		}	
+	// 新标预告
+	.foren{
+			margin-top:1rem;
+			height:200/32rem;
+			font-size:10/32rem;				
+			// 新标预告						
+					display: block;								
+					.l_r{
+						float:left;
+						display:block;
+					    width: 30/32rem;
+					    background:#DA1F06;					   
+                        color:white;
+						margin-left:35/32rem;
+						dl{
+							padding-left:5/32rem;
+							padding-bottom:5/32rem;	
+							dt{
+								&:nth-child(1){	
+									margin-left: -2/32rem;
+                                    margin-right: 2/32rem;
+									margin-top: -5/32rem;
+                                    margin-bottom: 5/32rem;																
+									height: 20/32rem;
+									border: 2/32rem solid #FFFFFF;
+									border-radius: 50%;
+								}
+							}
+						}						
+					}
+					// 右边内容块
+					.r_c{												
+						margin-left:2.05rem;
+						height: 204/32rem;	
+						background-color:#F8F8F8;
+						width: 560/32rem;
+						.tit{
+						    line-height: 35/32rem;
+							padding-left:20/32rem;
+							padding-right:20/32rem; 
+							height: 35/32rem;
+							border-bottom: 1/32rem solid #E2E2E2;
+							.r{
+								color:#DE6D40;
+                             padding-right:50/32rem;
+							}
+							.time{
+                             font-weight:900;							
+							 .box-sizing;
+							}
+							
+						}
+						dl{
+							font-size:16/32rem;
+							padding-top:5/32rem;
+							padding-left:20/32rem;							
+							dt{
+							font-size:16/32rem;
+							padding-top:20/32rem;					
+							}
+						}
+						dl.mon{	
+							width: 200/32rem;
+							margin:0;					 
+							padding-left:90/32rem;	
+							padding-top:20/32rem;										
+							dt{
+									font-size:16/32rem;
+									line-height: 35/32rem;
+									padding-top:35/32rem;																		
+									border-bottom:1/32rem dashed #E2E2E2;
+									.box-sizing;
+									&:first-child{
+										border-bottom: none;
+										padding-top:10/32rem;
+									}	
+								p{
+									margin:0;
+									display:inline-block;
+									
+									
+								}											
+							}	
+						}
+					}
+				}	
+				// 平台公告	
+				.newleft{
+					margin-top:1.8rem;
+					font-size:10/32rem;									
+					 .tit{						
+						height: 30/32rem;
+						line-height:30/32rem;
+						border-bottom: 1/32rem solid #E2E2E2;
+						margin:0.3rem 1.2rem;																
+						span.title{
+						display: inline-block;					
+						width: 100/32rem;
+						font-weight:800;												
+						font-size:16/32rem; 						
+						color:#000000; 
+						margin-left:10/32rem;
+						margin-right: 380/32rem;					
+						a{
+							color:#000000;
+							text-align: right;							
+						} 
+					}				 
+					}					
+					&>ul{
+						padding-left:1.2rem;										
+						&>li{
+							font-size:14/32rem;
+							padding-top:5/32rem;
+							&>span{
+								color:gray;
+							}
+							&>a{
+								color:#000000;
+							}							
+							&>a:hover{
+								color:#0170D9;
+								text-decoration: none;
+							}
+							&>a:focus{
+								color:black;
+							}
+						}
+					}
+					}								
+		// 理财项目
+		.financing{
+			height:760/32rem;
+			margin-top:74/32rem;
+			color:#000000;
+		// 标题
+			p{
+				background-image: url("img/want_list.png") left top no-repeat;
+			}
+			span{			
+			font-size:20/32rem;
+            padding:20/32rem;
+			font-weight: 900;
+			}
+			// 竖列表
+			ul{				
+				padding:0;
+			    padding:25/32rem 10/32rem;
+				li{
+					// 第一列
+					ul.gray{
+						display:flex;					
+						font-size:16/32rem;
+						background-color:#F7F7F7;
+						border-bottom:1/32rem solid #EBEBEB;
+						li{
+							text-align:center;
+							float:left;
+							flex:2;							
+						}
+					}
+					ul.num{
+						display:flex;
+						padding:22/32rem 0;
+						font-size:18/32rem;
+						border-bottom:1/32rem solid #EBEBEB;
+						li{
+							text-align:center;
+							float:left;
+							flex:2;		
+						  &:last-child{
+							  input{
+  								height: 30/32rem;
+							    width: 100/32rem;
+								background-color:#D53740;
+								border-radius: 8/32rem;
+								color:#ffffff;
+								font-size:16/32rem;
+								text-align:center;
+								&.gr{
+									background-color:#C7C7C7;
+								}
+							  }							 							 							  
+						  }													
+						}
+					}
+					&.mor{						
+						font-size:18/32rem;
+						padding:22/32rem;	
+						border-bottom:2/32rem solid #EBEBEB;
+						text-align:center;
+						a{
+							color:#000000;
+						}
+					}
+				}
+			}
+		   
+		}
+	}	
+        footer{
+            margin-top:170/32rem;
+            background-color: #F0F0F0;
+            font-size:10/32rem;
+            height: 210/32rem;
+            ul{
+                height: 30/32rem;
+                padding-top:12/32rem; 
+                padding-bottom:12/32rem; 
+                padding-left:12%;
+                border-bottom: 1/32rem solid #776E6E;              
+                li{
+                    float:left;
+                    padding-left:14/32rem;
+                    a{
+                        color:#000000;
+                    }                    
+                }
+            }
+            p{
+                margin:12/32rem 0;
+                text-align: center;
+            }
+        }
+	}
+}

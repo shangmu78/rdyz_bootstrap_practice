@@ -1,0 +1,455 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica;
+}
+img {
+  display: block;
+  border: 0 none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding-top: 0;
+}
+a {
+  text-decoration: none;
+}
+input {
+  border: 0 none;
+  outline-style: none;
+  margin: 0;
+  padding: 0;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.box {
+  width: 20rem;
+  margin: 0 auto;
+}
+.button {
+  background-color: #999;
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
+  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
+  background-image: -ms-linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
+  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
+  background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
+  border: none;
+  border-radius: .5rem;
+  box-shadow: inset 0 0 0 0.03125rem rgba(0, 0, 0, 0.2), inset 0 0.0625rem 0 rgba(255, 255, 255, 0.1), inset 0 0.8rem 0 rgba(255, 255, 255, 0.1), inset 0 -0.25rem 0 rgba(0, 0, 0, 0.25), 0 0.25rem 0.25rem rgba(0, 0, 0, 0.05);
+  color: #444;
+  cursor: pointer;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 0.75rem;
+  font-weight: 800;
+  line-height: 1rem;
+  margin: 0 .5rem 1rem;
+  padding: .3rem 1.1rem .5rem;
+  position: relative;
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.25);
+  vertical-align: middle;
+}
+.button:hover {
+  outline: none;
+}
+.button:hover,
+.button:focus {
+  box-shadow: inset 0 0 0 0.03125rem rgba(0, 0, 0, 0.2), inset 0 0.0625rem 0 rgba(255, 255, 255, 0.1), inset 0 0.8rem 0 rgba(255, 255, 255, 0.1), inset 0 -0.2rem 0 rgba(255, 255, 255, 0.1), inset 0 -0.25rem 0 rgba(0, 0, 0, 0.25), inset 0 0 0 3rem rgba(255, 255, 255, 0.2), 0 0.25rem 0.25rem rgba(0, 0, 0, 0.05);
+}
+.button:active {
+  box-shadow: inset 0 0 0 0.03125rem rgba(0, 0, 0, 0.2), inset 0 0.0625rem 0 rgba(255, 255, 255, 0.1), inset 0 0.8rem 0 rgba(255, 255, 255, 0.1), inset 0 0 0 3rem rgba(255, 255, 255, 0.2), inset 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05), 0 -0.03125rem 0.03125rem rgba(0, 0, 0, 0.1), 0 0.03125rem 0.03125rem rgba(255, 255, 255, 0.25);
+  outline: none;
+}
+/*mixin 混入*/
+/*REM适配 主流机型*/
+@media (min-width: 320px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media (min-width: 360px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media (min-width: 375px) {
+  html {
+    font-size: 18.75px;
+  }
+}
+@media (min-width: 384px) {
+  html {
+    font-size: 19.2px;
+  }
+}
+@media (min-width: 400px) {
+  html {
+    font-size: 20px;
+  }
+}
+@media (min-width: 414px) {
+  html {
+    font-size: 20.7px;
+  }
+}
+@media (min-width: 424px) {
+  html {
+    font-size: 21.2px;
+  }
+}
+@media (min-width: 480px) {
+  html {
+    font-size: 24px;
+  }
+}
+@media (min-width: 540px) {
+  html {
+    font-size: 27px;
+  }
+}
+@media (min-width: 640px) {
+  html {
+    font-size: 32px;
+  }
+}
+.box-sizing {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body .box header {
+  position: fixed;
+  width: 20rem;
+  height: 2.34375rem;
+  font-size: 0.46875rem;
+  background-color: rgba(248, 248, 248, 0.9);
+  border-bottom: 0.03125rem solid #d53740;
+  z-index: 100;
+}
+body .box header span img {
+  padding-top: 0.15625rem;
+  padding-left: 0.9375rem;
+  height: 1.875rem;
+  width: 7.5rem;
+  float: left;
+}
+body .box header ul {
+  margin: 0;
+  padding: 0;
+  margin-right: 0.625rem;
+  margin-top: 0rem;
+  list-style: none;
+}
+body .box header ul li {
+  float: left;
+}
+body .box header ul li a {
+  font-size: 0.9375rem;
+  line-height: 2.34375rem;
+  padding: 0rem 0.46875rem;
+  font-weight: 800;
+  color: #333333;
+}
+body .box header ul li a:hover {
+  color: #D53740;
+}
+body .box header ul li span {
+  font-size: 0.78125rem;
+}
+body .box section .bla {
+  height: 2.34375rem;
+}
+body .box section .scroll {
+  height: 10rem;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+body .box section .scroll > ul:first-child {
+  margin: 0;
+  padding: 0;
+  width: 1000%;
+  -webkit-transform: translateX(-10%);
+  /*尽可能做webkit内核的兼容*/
+  transform: translateX(-10%);
+}
+body .box section .scroll > ul:first-child li {
+  width: 10%;
+  float: left;
+}
+body .box section .scroll > ul:first-child li a {
+  width: 100%;
+  display: block;
+}
+body .box section .scroll > ul:first-child li a img {
+  width: 100%;
+  /*
+							font-size 0
+							block
+							vertical-align: middle;
+							*/
+  display: block;
+}
+body .box section .scroll > ul:last-child {
+  width: 3.6875rem;
+  height: 0.1875rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 45%;
+  margin-left: -1.84375rem;
+}
+body .box section .scroll > ul:last-child li {
+  width: 0.3125rem;
+  height: 0.3125rem;
+  float: left;
+  border-radius: 0.09375rem;
+  border: 0.03125rem solid #ffffff;
+  margin-left: 0.3125rem;
+}
+body .box section .scroll > ul:last-child li.now {
+  background: #fff;
+}
+body .box section .scroll > ul:last-child li:nth-child(1) {
+  margin-left: 0;
+}
+body .box section .counted {
+  height: 6.875rem;
+  margin-top: 0.625rem;
+  margin-left: 1.25rem;
+}
+body .box section .counted .icon1 {
+  display: flex;
+}
+body .box section .counted .icon1 img {
+  flex: 1;
+  height: 3.4375rem;
+  margin-right: 1.25rem;
+}
+body .box section .counted .icon2 {
+  margin-right: 0.9375rem;
+  margin-left: -0.46875rem;
+  display: flex;
+  font-size: 0.625rem;
+}
+body .box section .counted .icon2 dl {
+  flex: 1;
+  text-align: center;
+}
+body .box section .counted .icon2 dl dt {
+  font-size: 0.8125rem;
+}
+body .box section .foren {
+  margin-top: 1rem;
+  height: 6.25rem;
+  font-size: 0.3125rem;
+  display: block;
+}
+body .box section .foren .l_r {
+  float: left;
+  display: block;
+  width: 0.9375rem;
+  background: #DA1F06;
+  color: white;
+  margin-left: 1.09375rem;
+}
+body .box section .foren .l_r dl {
+  padding-left: 0.15625rem;
+  padding-bottom: 0.15625rem;
+}
+body .box section .foren .l_r dl dt:nth-child(1) {
+  margin-left: -0.0625rem;
+  margin-right: 0.0625rem;
+  margin-top: -0.15625rem;
+  margin-bottom: 0.15625rem;
+  height: 0.625rem;
+  border: 0.0625rem solid #ffffff;
+  border-radius: 50%;
+}
+body .box section .foren .r_c {
+  margin-left: 2.05rem;
+  height: 6.375rem;
+  background-color: #F8F8F8;
+  width: 17.5rem;
+}
+body .box section .foren .r_c .tit {
+  line-height: 1.09375rem;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  height: 1.09375rem;
+  border-bottom: 0.03125rem solid #e2e2e2;
+}
+body .box section .foren .r_c .tit .r {
+  color: #DE6D40;
+  padding-right: 1.5625rem;
+}
+body .box section .foren .r_c .tit .time {
+  font-weight: 900;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body .box section .foren .r_c dl {
+  font-size: 0.5rem;
+  padding-top: 0.15625rem;
+  padding-left: 0.625rem;
+}
+body .box section .foren .r_c dl dt {
+  font-size: 0.5rem;
+  padding-top: 0.625rem;
+}
+body .box section .foren .r_c dl.mon {
+  width: 6.25rem;
+  margin: 0;
+  padding-left: 2.8125rem;
+  padding-top: 0.625rem;
+}
+body .box section .foren .r_c dl.mon dt {
+  font-size: 0.5rem;
+  line-height: 1.09375rem;
+  padding-top: 1.09375rem;
+  border-bottom: 0.03125rem dashed #e2e2e2;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body .box section .foren .r_c dl.mon dt:first-child {
+  border-bottom: none;
+  padding-top: 0.3125rem;
+}
+body .box section .foren .r_c dl.mon dt p {
+  margin: 0;
+  display: inline-block;
+}
+body .box section .newleft {
+  margin-top: 1.8rem;
+  font-size: 0.3125rem;
+}
+body .box section .newleft .tit {
+  height: 0.9375rem;
+  line-height: 0.9375rem;
+  border-bottom: 0.03125rem solid #e2e2e2;
+  margin: 0.3rem 1.2rem;
+}
+body .box section .newleft .tit span.title {
+  display: inline-block;
+  width: 3.125rem;
+  font-weight: 800;
+  font-size: 0.5rem;
+  color: #000000;
+  margin-left: 0.3125rem;
+  margin-right: 11.875rem;
+}
+body .box section .newleft .tit span.title a {
+  color: #000000;
+  text-align: right;
+}
+body .box section .newleft > ul {
+  padding-left: 1.2rem;
+}
+body .box section .newleft > ul > li {
+  font-size: 0.4375rem;
+  padding-top: 0.15625rem;
+}
+body .box section .newleft > ul > li > span {
+  color: gray;
+}
+body .box section .newleft > ul > li > a {
+  color: #000000;
+}
+body .box section .newleft > ul > li > a:hover {
+  color: #0170D9;
+  text-decoration: none;
+}
+body .box section .newleft > ul > li > a:focus {
+  color: black;
+}
+body .box section .financing {
+  height: 23.75rem;
+  margin-top: 2.3125rem;
+  color: #000000;
+}
+body .box section .financing p {
+  background-image: url("img/want_list.png") left top no-repeat;
+}
+body .box section .financing span {
+  font-size: 0.625rem;
+  padding: 0.625rem;
+  font-weight: 900;
+}
+body .box section .financing ul {
+  padding: 0;
+  padding: 0.78125rem 0.3125rem;
+}
+body .box section .financing ul li ul.gray {
+  display: flex;
+  font-size: 0.5rem;
+  background-color: #F7F7F7;
+  border-bottom: 0.03125rem solid #ebebeb;
+}
+body .box section .financing ul li ul.gray li {
+  text-align: center;
+  float: left;
+  flex: 2;
+}
+body .box section .financing ul li ul.num {
+  display: flex;
+  padding: 0.6875rem 0;
+  font-size: 0.5625rem;
+  border-bottom: 0.03125rem solid #ebebeb;
+}
+body .box section .financing ul li ul.num li {
+  text-align: center;
+  float: left;
+  flex: 2;
+}
+body .box section .financing ul li ul.num li:last-child input {
+  height: 0.9375rem;
+  width: 3.125rem;
+  background-color: #D53740;
+  border-radius: 0.25rem;
+  color: #ffffff;
+  font-size: 0.5rem;
+  text-align: center;
+}
+body .box section .financing ul li ul.num li:last-child input.gr {
+  background-color: #C7C7C7;
+}
+body .box section .financing ul li.mor {
+  font-size: 0.5625rem;
+  padding: 0.6875rem;
+  border-bottom: 0.0625rem solid #ebebeb;
+  text-align: center;
+}
+body .box section .financing ul li.mor a {
+  color: #000000;
+}
+body .box footer {
+  margin-top: 5.3125rem;
+  background-color: #F0F0F0;
+  font-size: 0.3125rem;
+  height: 6.5625rem;
+}
+body .box footer ul {
+  height: 0.9375rem;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  padding-left: 12%;
+  border-bottom: 0.03125rem solid #776e6e;
+}
+body .box footer ul li {
+  float: left;
+  padding-left: 0.4375rem;
+}
+body .box footer ul li a {
+  color: #000000;
+}
+body .box footer p {
+  margin: 0.375rem 0;
+  text-align: center;
+}
