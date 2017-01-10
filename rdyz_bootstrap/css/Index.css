@@ -1,0 +1,246 @@
+/*顶部隐式通栏*/
+.header .row > div {
+  border: 1px solid gray;
+  line-height: 60px;
+  text-align: center;
+}
+.header .row > div > a {
+  text-decoration: none;
+  font-size: 17px;
+  color: gray;
+}
+.header .row > div:nth-child(n+2) a {
+  margin-left: 10px;
+}
+.header .row > div:first-child {
+  position: relative;
+}
+.header .row > div:first-child > img {
+  position: absolute;
+  display: none;
+  height: 40px;
+  width: 40px;
+}
+.header .row > div:first-child:hover {
+  display: block;
+}
+.rdyz-default {
+  background-color: #ffffff;
+  border-color: #e7e7e7;
+}
+.rdyz-default .navbar-brand {
+  height: 130px;
+  color: #777;
+}
+.rdyz-default .navbar-brand img {
+  display: inline;
+  padding-top: 20px;
+}
+.rdyz-default .navbar-brand:hover,
+.rdyz-default .navbar-brand:focus {
+  color: #5e5e5e;
+  background-color: transparent;
+}
+.rdyz-default .navbar-text {
+  color: #777;
+}
+.rdyz-default .navbar-nav > li > a {
+  height: 130px;
+  line-height: 100px;
+  font-size: 16px;
+  color: #777;
+}
+.rdyz-default .navbar-nav > li > a:hover,
+.rdyz-default .navbar-nav > li > a:focus {
+  color: #333;
+  border-bottom: 3px solid red;
+  background-color: transparent;
+}
+.rdyz-default .navbar-nav > .disabled > a,
+.rdyz-default .navbar-nav > .disabled > a:hover,
+.rdyz-default .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+.rdyz-default .navbar-toggle {
+  border-color: #ddd;
+}
+.rdyz-default .navbar-toggle:hover,
+.rdyz-default .navbar-toggle:focus {
+  background-color: #ddd;
+}
+.rdyz-default .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+.rdyz-default .navbar-collapse,
+.rdyz-default .navbar-form {
+  border-color: #e7e7e7;
+}
+.rdyz-default .navbar-nav > .open > a,
+.rdyz-default .navbar-nav > .open > a:hover,
+.rdyz-default .navbar-nav > .open > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+@media (max-width: 767px) {
+  .rdyz-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #777;
+  }
+  .rdyz-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .rdyz-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #333;
+    background-color: transparent;
+  }
+  .rdyz-default .navbar-nav .open .dropdown-menu > .active > a,
+  .rdyz-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .rdyz-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+  }
+  .rdyz-default .navbar-nav .open .dropdown-menu > .disabled > a,
+  .rdyz-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .rdyz-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+  }
+}
+.rdyz-default .navbar-link {
+  color: #777;
+}
+.rdyz-default .navbar-link:hover {
+  color: #333;
+}
+.rdyz-default .btn-link {
+  color: #777;
+}
+.rdyz-default .btn-link:hover,
+.rdyz-default .btn-link:focus {
+  color: #333;
+}
+.rdyz-default .btn-link[disabled]:hover,
+fieldset[disabled] .rdyz-default .btn-link:hover,
+.rdyz-default .btn-link[disabled]:focus,
+fieldset[disabled] .rdyz-default .btn-link:focus {
+  color: #ccc;
+}
+.banner {
+  /* 手机端 */
+}
+.banner .banner_a {
+  height: 420px;
+  /* 裁切图片*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+}
+.banner .banner_a.image_a {
+  background-image: url('../img/2.jpg');
+}
+.banner .banner_a.image_b {
+  background-image: url('../img/4.jpg');
+}
+.banner .banner_a.image_c {
+  background-image: url('../img/8.jpg');
+}
+.banner .mobile_a {
+  display: block;
+  width: 100%;
+}
+.banner .mobile_a img {
+  display: block;
+  width: 100%;
+}
+.media_rdyz {
+  margin-top: 50px;
+}
+.media_rdyz .media-body {
+  padding-top: 20px;
+  display: inline-block;
+  float: left;
+  width: 373px;
+}
+.media_rdyz .media-body > a > img {
+  height: 76px;
+  margin-top: 2px;
+}
+.media_rdyz .media-body .media-top {
+  display: inline-block;
+  float: right;
+  width: 297px;
+}
+.media_rdyz .media-body .media-top > dl dt a {
+  text-decoration: none;
+  color: black;
+}
+.media_rdyz .media-body .media-top > dl dt a:hover {
+  text-decoration: underline;
+  color: #0170D9;
+}
+.news {
+  background-color: #F2F2F2;
+  padding-top: 25px;
+}
+.news .news_rdyz {
+  height: 300px;
+  background-color: #ffffff;
+}
+.news .news_rdyz .newleft span.title {
+  display: block;
+  padding: 8px 200px 5px 3px;
+  font-size: 18px;
+  font-weight: 900;
+  color: #0170D9;
+}
+.news .news_rdyz .newleft > ul {
+  padding: 10px;
+}
+.news .news_rdyz .newleft > ul > li {
+  font-size: 12px;
+  padding-top: 5px;
+}
+.news .news_rdyz .newleft > ul > li > span {
+  color: gray;
+}
+.news .news_rdyz .newleft > ul > li > a {
+  color: black;
+  text-decoration: none;
+}
+.news .news_rdyz .newleft > ul > li > a:hover {
+  color: #0170D9;
+  text-decoration: underline;
+}
+.news .news_rdyz .newleft > ul > li > a:focus {
+  color: black;
+}
+.news .news_rdyz .newright {
+  width: 520px;
+  height: 300px;
+}
+.news .news_rdyz .newright span {
+  font-size: 18px;
+  font-weight: 900;
+  color: #0170D9;
+  padding: 8px 200px 15px 3px;
+  display: block;
+}
+.news .news_rdyz .newright a {
+  display: inline-block;
+  float: left;
+}
+.news .news_rdyz .newright a.text {
+  display: inline-block;
+  float: right;
+}
+.news .news_rdyz .newright a img {
+  margin-right: 20px;
+  height: 185px;
+  width: 220px;
+}
+.news .news_rdyz .newright p {
+  font-size: 13px;
+}
+.footer > a {
+  display: inline-block;
+  margin-top: 25px;
+}

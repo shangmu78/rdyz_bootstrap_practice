@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'rdyz font';
+
+  src: url('../fonts/MiFie-Web-Font.eot');
+  src: url('../fonts/MiFie-Web-Font.eot?#iefix') format('embedded-opentype'), 
+   url('../fonts/MiFie-Web-Font.woff') format('woff'), 
+   url('../fonts/MiFie-Web-Font.ttf') format('truetype'), 
+   url('../fonts/MiFie-Web-Font.svg#glyphicons_halflingsregular') format('svg');
+}
+.rdyz_font {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'rdyz font';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.rdyz_phone::before{
+    content: "\e908";
+}
+.rdyz_tel::before{
+    content: "\e909";
+}
+.rdyz_logo::before{
+    content: "\e920";
+}
+.rdyz_word::before{
+    content: "\e93e";
+}
+.rdyz_E903::before{
+    content: "\e903";
+}
+.rdyz_E906::before{
+    content: "\e906";
+}
+.rdyz_E905::before{
+    content: "\e905";
+}
+.rdyz_E907::before{
+    content: "\e907";
+}
+.rdyz_E901::before{
+    content: "\e901";
+}
+.rdyz_E900::before{
+    content: "\e900";
+}
+.rdyz_E904::before{
+    content: "\e904";
+}
+.rdyz_E902::before{
+    content: "\e902";
+}
+.rdyz_E906::before{
+    content: "\e906";
+}
+.rdyz_E908::before{
+    content: "\e908";
+}
+.rdyz_new01::before{
+    content: "\e90e";
+}
+.rdyz_new02::before{
+    content: "\e90f";
+}
+.rdyz_new03::before{
+    content: "\e910";
+}
+.rdyz_new04::before{
+    content: "\e911";
+}
+.rdyz_partner01::before{
+    content:"\e946";
+}
+.rdyz_partner02::before{
+    content: "\e92f";
+}
+.rdyz_partner03::before{
+    content: "\e92e";
+}
+.rdyz_partner04::before{
+    content: "\e92a";
+}
+.rdyz_partner05::before{
+    content: "\e929";
+}
+.rdyz_partner06::before{
+    content: "\e931";
+}
+.rdyz_partner07::before{
+    content: "\e92c";
+}
+.rdyz_partner08::before{
+    content: "\e92b";
+}
+.rdyz_partner09::before{
+    content: "\e92d";
+}
